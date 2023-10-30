@@ -1,0 +1,10 @@
+#!/bin/bash
+
+python_file=$PYFILE
+
+if [ -f "$python_file" ]; then
+    # Run the Python script
+    python "$python_file"
+else
+    echo "Python file not found: $python_file"
+fi
